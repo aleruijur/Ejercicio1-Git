@@ -8,6 +8,13 @@ public class main {
 		System.out.println(res2);
 		int res3 = Suma.sumaAcum(2);
 		System.out.println(res3);
+		
+		int res4 = Resta.resta(4, 1);
+		System.out.println(res4);
+		int res5 = Resta.restaAcum(3);
+		System.out.println(res5);
+		int res6 = Resta.restaAcum(-5);
+		System.out.println(res6);
 	}
 
 }
