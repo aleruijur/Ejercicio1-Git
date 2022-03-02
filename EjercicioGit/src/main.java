@@ -2,7 +2,7 @@
 public class main {
 
 	public static void main(String[] args) {
-		System.out.println("Pruebas:");
+		System.out.println("Pruebas de las clases:");
 		
 		int res1 = Suma.suma(2, 3);
 		System.out.println(res1);
