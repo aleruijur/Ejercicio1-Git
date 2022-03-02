@@ -2,6 +2,7 @@
 public class Suma {
 	
 	//Clase que realiza la suma
+	//Solo suma números enteros
 	
 	static int acum = 0;
 	
