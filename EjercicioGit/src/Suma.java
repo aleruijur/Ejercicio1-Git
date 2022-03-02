@@ -2,6 +2,7 @@
 public class Suma {
 	
 	//Clase que realiza la suma
+	//Se puede usar el método para sumar dos número o una suma acumulada
 	
 	static int acum = 0;
 	
