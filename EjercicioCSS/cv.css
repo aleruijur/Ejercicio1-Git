@@ -1,0 +1,51 @@
+*{
+    font-family: 'Franklin Gothic';
+    margin: auto;
+}
+
+main{
+    background-color: rgb(226, 226, 226);
+}
+
+#logo{
+    width: 150px;
+    float: right;
+    margin-right: 5px;
+}
+
+header, nav.menu{
+    background-color: orange;
+    color: white
+}
+
+
+#perfil{
+    float: left;
+    width: 150px;
+    border-style: solid;
+    border-color: orange;
+}
+
+nav.menu li{
+    display: inline;
+}
+
+h2{
+    border-style: solid;
+    border-color: orange;
+    background-color: black;
+    color:white;
+    clear: left;
+}
+
+section{
+    margin: 5px;
+}
+
+div ul{
+    margin: 5px;
+    float: left;
+    font-size: large;
+}
+
+
