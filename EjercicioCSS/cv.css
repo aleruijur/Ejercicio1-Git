@@ -3,7 +3,7 @@
     margin: auto;
 }
 
-main{
+:not(header *,nav *){
     background-color: rgb(226, 226, 226);
 }
 
@@ -11,6 +11,7 @@ main{
     width: 150px;
     float: right;
     margin-right: 5px;
+    margin-top: 7px;
 }
 
 header, nav.menu{
@@ -36,10 +37,14 @@ h2{
     background-color: black;
     color:white;
     clear: left;
+    font-size: x-large;
+    width: 100%;
 }
 
 section{
     margin: 5px;
+    width: 80%;
+    clear: both;
 }
 
 div ul{
@@ -48,4 +53,31 @@ div ul{
     font-size: large;
 }
 
+.der{
+    text-align: right;
+    float: right;
+}
 
+
+.izq{
+    text-align: left;
+    float: left;
+}
+
+table{
+    width: 80%;
+    border-collapse: collapse;
+    font-size: large;
+    margin: 10px auto;
+    text-align: initial;
+}
+
+table, th, td{
+    background-color:antiquewhite;
+    border: 2px solid black;
+}
+
+th{
+    background-color: orange;
+    color: white;
+}
