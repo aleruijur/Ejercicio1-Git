@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Juego</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img id="logo" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/gamecontroller-256.png" alt="Logo" title="Logo de la página">
+            <h1><u>Colección de videojuegos</u></h1>
+        </header>
+
+        <span><h2>Añadir Nuevo Juego</h2></span>
+        <p>En esta página puedes añadir un juego a tu colección rellenando el siguiente formulario</p>
+
+        <form action="addGame.jsp" method="get">
+            <fieldset>
+                <input id="id" type="hidden" name="id" value="27"/>
+                <label for="titulo">Título: </label>
+                <input id="titulo" type="text" name="titulo" placeholder="Escribe su título" required/>
+                <br/>
+                <label for="desarrollador">Desarrollador: </label>
+                <input id="desarrollador" type="text" name="desarrollador" placeholder="Escribe su desarrollador"/>
+                <br/>
+                <label for="genero">Género: </label>
+                <br />	
+                <input type="checkbox" name="genero" value="RPG" checked/>RPG<br />	
+                <input type="checkbox" name="genero" value="Aventura" />Aventura<br />	
+                <input type="checkbox" name="genero" value="Acción" checked/>Acción<br />	
+                <input type="checkbox" name="genero" value="Shooter" />Shooter<br />	
+                <input type="checkbox" name="genero" value="Carreras" />Carreras<br />	
+                <input type="checkbox" name="genero" value="Lucha" />Lucha<br />	
+                <br/>
+                <label for="fecha">Fecha de Lanzamiento: </label>
+                <input id="fecha" type="date" name="fecha" />
+                <br/>
+                
+                <input class="button" type="submit" value="Enviar datos" />
+                <input class="button" type="reset" value="Reiniciar formulario" />
+            </fieldset>
+        </form>
+
+        <footer>
+            <marquee><p>Desarrollado por Alejandro Ruiz</p></marquee>
+        </footer>
+    </main>
+</body>
+</html>
