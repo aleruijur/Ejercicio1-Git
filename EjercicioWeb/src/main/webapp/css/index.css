@@ -1,0 +1,12 @@
+*{
+	font-family: 'arial';
+	background-color: lightgrey;
+}
+
+h1{
+	text-decoration: underline;
+}
+
+li{
+	display: inline;
+}
