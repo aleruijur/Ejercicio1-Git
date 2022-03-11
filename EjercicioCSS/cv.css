@@ -3,7 +3,7 @@
     margin: auto;
 }
 
-:not(header *,nav *){
+html{
     background-color: rgb(226, 226, 226);
 }
 
@@ -49,15 +49,15 @@ h2{
     width: 100%;
 }
 
-#datos{
-    
-    margin: auto;
-}
-
-section:not(#datos){
+section{
     margin: 5px;
     width: 80%;
     clear: both;
+}
+
+#datos{
+    margin: auto;
+    width: 60%;
 }
 
 div ul{
@@ -94,12 +94,24 @@ th{
     color: white;
 }
 
+ul.categorias li{
+    display: inline;
+    margin: 5px;
+}
+
+ul.categorias>li{
+    background-color: orange;
+    border: 2px solid black;
+    color: white;
+}
+
 @media screen and (max-width: 1000px){
-    section{
-        width: 100%;
+    #datos{
+        width: 100% !important;
     }
 
-    #datos{
-        position: static;
+    section{
+        width: 98% !important;
+        float: none !important;
     }
 }
