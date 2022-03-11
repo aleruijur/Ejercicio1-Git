@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
     List<Usuario> registrados = new ArrayList<>(Arrays.asList(u1,u2,u3)) ;
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		doPost(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -38,10 +38,13 @@ public class LoginServlet extends HttpServlet {
 		Usuario u = new Usuario(username,password);
 		
 		if(registrados.contains(u)) {
-			RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("welcome.jsp");
 			
 			request.getSession().setAttribute("user", u);
 			
+			rd.forward(request, response);
+		}else {
+			RequestDispatcher rd = request.getRequestDispatcher("error.html");
 			rd.forward(request, response);
 		}
 	}

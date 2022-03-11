@@ -1,0 +1,76 @@
+*{
+	font-family: 'arial';
+}
+
+body{
+	margin: 0px;
+	background-color: lightgrey;
+}
+
+h1{
+	text-decoration: underline;
+	margin: 5px;
+}
+
+h2, form{
+	margin: 10px;
+}
+
+.error{
+	color: red;
+	text-align: center;
+	margin-top:10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+.left{
+	float: left;
+}
+
+.user{
+	color: blue;
+}
+
+.login{
+	position: absolute;
+	top: 40%;
+	right:40%;
+	background-color: grey;
+	text-align:center;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.button{
+	background-color: lightgrey;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.button:hover{
+	background-color: black;
+	color:white;
+}
