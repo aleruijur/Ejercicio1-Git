@@ -1,0 +1,17 @@
+<div class="calc" style="text-align:center;">
+    <h1>Calculadora</h1>
+
+    <input id="left" type="number" step=any [(ngModel)]="a">
+    <input id="right" type="number" step=any [(ngModel)]="b">
+    <br/>
+    <br/>
+    <button (click)="suma()">+</button>
+    <button (click)="resta()">-</button>
+    <button (click)="mult()">x</button>
+    <button (click)="div()">/</button>
+    <br/>
+    <br/>
+    <span id="res">El resultado es: {{res}}</span>
+    <br/>
+    <br/>
+</div>
