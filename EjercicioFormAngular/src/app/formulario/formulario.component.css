@@ -1,0 +1,39 @@
+.rojo{
+    color: red;
+}
+
+table, th, td{
+    border: 2px solid midnightblue;
+    border-collapse: collapse;
+}
+
+.form{
+    margin-left: 20px;
+    width: 40%;
+    float: left;
+}
+
+table{
+    width: 50%;
+    float: right;
+    margin-right: 20px;
+    clear: none;
+}
+
+button{
+    color: white;
+    background-color: midnightblue;
+}
+
+button:hover{
+    background-color: rgb(40, 40, 177);
+}
+
+@media screen and (max-width: 600px){
+    .form{
+        width: 90%;
+    }
+    table{
+        width: 90%;
+    }
+}
