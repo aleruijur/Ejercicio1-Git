@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ListadoComponent } from '../listado/listado.component';
 
 @Component({
   selector: 'app-nav',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+  
+  }
 
   ngOnInit(): void {
   }

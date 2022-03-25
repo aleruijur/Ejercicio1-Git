@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
       let user = this.registrados.find(u=>u.username==newUser.username)
       if(user!=undefined){
         if(user.password==newUser.password){
-          this.router.navigate(['/listado'])
+          this.router.navigate(['/listado'], {queryParams:{username: newUser.username}})
         }else{
           this.passwordIncorrectoError = false
         }

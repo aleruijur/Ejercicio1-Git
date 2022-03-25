@@ -1,7 +1,4 @@
+<h2>Bienvenido {{usuarioReg}}</h2>
 <ul>
-    <li *ngFor="let videojuego of videojuegos">
-        <a [routerLink]="['/detalles',videojuego.id]">
-            <img src="{{videojuego.caratula}}"/> {{videojuego.titulo}} ({{videojuego.id}})
-        </a>
-    </li>
+    <app-elemento *ngFor="let v of videojuegos" [videojuego]="v"></app-elemento>
 </ul>
