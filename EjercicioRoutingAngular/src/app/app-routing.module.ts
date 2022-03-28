@@ -8,27 +8,27 @@ import { SobrenosotrosComponent } from './componentes/sobrenosotros/sobrenosotro
 
 const routes: Routes = [
   {
-    path : '', 
+    path : '',
     component : LoginComponent
   },
   {
-    path : 'login', 
+    path : 'login',
     component : LoginComponent
   },
   {
-    path : 'listado', 
+    path : 'listado',
     component : ListadoComponent
   },
   {
-    path : 'detalles/:id', 
+    path : 'detalles/:titulo',
     component : DetallesComponent
   },
   {
-    path : 'contactar', 
+    path : 'contactar',
     component : ContactarComponent
   },
   {
-    path : 'sobrenosotros', 
+    path : 'sobrenosotros',
     component : SobrenosotrosComponent
   }
 ];
