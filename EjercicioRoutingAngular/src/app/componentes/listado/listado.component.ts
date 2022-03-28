@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Videojuego } from 'src/app/entidades/videojuegos';
 
 @Component({
@@ -13,7 +13,7 @@ export class ListadoComponent implements OnInit {
 
   static usuario = ""
 
-  constructor(route:ActivatedRoute) { 
+  constructor(private router:Router,route:ActivatedRoute) { 
     let v = new Videojuego("Pokémon Leyendas Arceus", "Nintendo", "8.5", "https://i.blogs.es/5cea4c/leyendas-pokemon-arceus-portada/1024_2000.jpeg");
     if(!ListadoComponent.videojuegos.has(v.titulo)){
       ListadoComponent.videojuegos.set(v.titulo,v)
@@ -30,6 +30,11 @@ export class ListadoComponent implements OnInit {
     let actualUser = route.snapshot.queryParams['username']
     if(actualUser!=undefined && (this.usuarioReg.trim().length == 0 || this.usuarioReg!=actualUser)){
       ListadoComponent.usuario = actualUser
+    }
+
+    //Te manda al login si no estás registrado
+    if(ListadoComponent.usuario.length == 0){
+      this.router.navigate(['/login'])
     }
   }
 

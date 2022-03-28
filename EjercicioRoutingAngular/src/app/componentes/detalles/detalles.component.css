@@ -1,5 +1,7 @@
 img{
     max-width:300px;
+    float: left;
+    border: 5px solid #A4AF69;
 }
 
 li{
@@ -11,4 +13,12 @@ li{
 a{
     text-decoration: none;
     color: black;
+}
+
+.detalles{
+    display: inline-block;
+    font-size: x-large;
+    position: relative;
+    left: 100px;
+    background-color: #A4AF69;
 }
