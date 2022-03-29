@@ -22,3 +22,15 @@ a{
     left: 100px;
     background-color: #A4AF69;
 }
+
+button{
+    background-color: #A4AF69;
+    font-size: x-large;
+    position: relative;
+    left: 100px;
+}
+
+button:hover{
+    background-color: #2E5077;
+    color:white;
+}

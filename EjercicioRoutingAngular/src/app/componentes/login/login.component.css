@@ -1,0 +1,26 @@
+button{
+    background-color: #A4AF69;
+    font-size: x-large;
+}
+
+button:hover{
+    background-color: #2E5077;
+    color:white;
+}
+
+main{
+    width: 40%;
+    margin: auto;
+    background-color: #2E5077;
+    color: white;
+    border: 5px #A4AF69 solid;
+    border-radius: 20px;
+    font-size:x-large;
+    min-width: 500px;
+    text-align: center;
+}
+
+input{
+    margin: 5px;
+    font-size:x-large;
+}
