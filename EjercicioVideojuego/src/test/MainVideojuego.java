@@ -1,22 +1,30 @@
 package test;
 
-import modelo.entidad.Combate;
-import modelo.entidad.arma.Arco;
-import modelo.entidad.arma.Espada;
-import modelo.entidad.personaje.Guerrero;
+import modelo.entidad.Torneo;
+import modelo.entidad.arma.*;
+import modelo.entidad.personaje.*;
 
 public class MainVideojuego {
 
 	public static void main(String[] args) {
-		Espada espada = new Espada(5);
-		Arco arco = new Arco(3);
+		Espada espada = new Espada(4);
+		Arco arco = new Arco(2);
+		Hechizo hech = new Hechizo(5);
+		Rezo rezo = new Rezo(2);
 		
-		Guerrero gue1 = new Guerrero("Link", arco, 20, 3);
-		Guerrero gue2 = new Guerrero("Ganondorf", espada, 30, 10);
+		Guerrero gue1 = new Guerrero("Link", arco, 20, 3, 2);
+		Guerrero gue2 = new Guerrero("Ganondorf", espada, 30, 1, 3);
+		Mago mago1 = new Mago("Kamek", hech, 20, 1, 2);
+		Curandero cur1 = new Curandero("Zelda", rezo, 25, 5, 4);
 		
-		Combate comb = new Combate(gue1, gue2);
-
-		comb.batalla();
+		Torneo torneo = new Torneo();
+		torneo.añadirParticipante(gue1);
+		torneo.añadirParticipante(gue2);
+		torneo.añadirParticipante(mago1);
+		torneo.añadirParticipante(cur1);
+		
+		torneo.comenzarTorneo();
+		
 	}
 
 }

@@ -7,8 +7,8 @@ public class Mago extends Personaje{
 
 	private Integer inteligencia;
 
-	public Mago(String nombre, Arma arma, Integer vida, Integer inteligencia) {
-		super(nombre, arma, vida);
+	public Mago(String nombre, Arma arma, Integer vida, Integer velocidad, Integer inteligencia) {
+		super(nombre, arma, vida, velocidad);
 		this.inteligencia = inteligencia;
 	}
 
@@ -19,6 +19,7 @@ public class Mago extends Personaje{
 			daño = daño + this.inteligencia;
 		}
 		p.herir(daño);
+		System.out.println("El mago " + this.getNombre() + " inflinje " + daño + " puntos de daño a " + p.getNombre());
 	}
 
 	public Integer getInteligencia() {

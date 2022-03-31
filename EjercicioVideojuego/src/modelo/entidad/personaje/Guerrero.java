@@ -8,8 +8,8 @@ public class Guerrero extends Personaje{
 	
 	private Integer fuerza;
 	
-	public Guerrero(String nombre, Arma arma, Integer vida, Integer fuerza) {
-		super(nombre, arma, vida);
+	public Guerrero(String nombre, Arma arma, Integer vida, Integer velocidad, Integer fuerza) {
+		super(nombre, arma, vida, velocidad);
 		this.fuerza = fuerza;
 	}
 
@@ -20,6 +20,7 @@ public class Guerrero extends Personaje{
 			daño = daño + this.fuerza;
 		}
 		p.herir(daño);
+		System.out.println("El guerrero " + this.getNombre() + " inflinje " + daño + " puntos de daño a " + p.getNombre());
 	}
 	
 	public Integer getFuerza() {

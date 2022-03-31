@@ -7,12 +7,14 @@ public abstract class Personaje {
 	private String nombre;
 	private Arma arma;
 	private Integer vida;
+	private Integer velocidad;
 	
-	public Personaje(String nombre, Arma arma, Integer vida) {
+	public Personaje(String nombre, Arma arma, Integer vida, Integer velocidad) {
 		super();
 		this.nombre = nombre;
 		this.arma = arma;
 		this.vida = vida;
+		this.velocidad = velocidad;
 	}
 	
 	public abstract void atacar(Personaje p);
@@ -40,9 +42,18 @@ public abstract class Personaje {
 		this.vida = vida;
 	}
 	
+	public Integer getVelocidad() {
+		return velocidad;
+	}
+
+	public void setVelocidad(Integer velocidad) {
+		this.velocidad = velocidad;
+	}
+	
 	@Override
 	public String toString() {
-		return "Personaje " + nombre;
+		return this.nombre;
 	}
+
 	
 }

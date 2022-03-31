@@ -7,8 +7,8 @@ public class Curandero extends Personaje{
 	
 	private Integer sabiduria;
 	
-	public Curandero(String nombre, Arma arma, Integer vida, Integer sabiduria) {
-		super(nombre, arma, vida);
+	public Curandero(String nombre, Arma arma, Integer vida, Integer velocidad, Integer sabiduria) {
+		super(nombre, arma, vida, velocidad);
 		this.sabiduria = sabiduria;
 	}
 
@@ -19,6 +19,7 @@ public class Curandero extends Personaje{
 			daño = daño + this.sabiduria;
 		}
 		p.herir(daño);
+		System.out.println("El curandero " + this.getNombre() + " inflinje " + daño + " puntos de daño a " + p.getNombre());
 	}
 
 	public Integer getSabiduria() {
