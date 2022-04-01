@@ -186,7 +186,8 @@ $RECYCLE.BIN/
 
 # Posibles Archivos Propios
 #/libraries/
-#/Servers/
+/Servers/
+/node_modules/
 sync.ffs_db
 © 2022 GitHub, Inc.
 Terms
