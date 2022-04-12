@@ -1,0 +1,36 @@
+img{
+    max-width:300px;
+    float: left;
+    border: 5px solid #A4AF69;
+}
+
+li{
+    background-color: #A4AF69;
+    font-size: x-large;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.detalles{
+    display: inline-block;
+    font-size: x-large;
+    position: relative;
+    left: 100px;
+    background-color: #A4AF69;
+}
+
+button{
+    background-color: #A4AF69;
+    font-size: x-large;
+    position: relative;
+    left: 100px;
+}
+
+button:hover{
+    background-color: #2E5077;
+    color:white;
+}

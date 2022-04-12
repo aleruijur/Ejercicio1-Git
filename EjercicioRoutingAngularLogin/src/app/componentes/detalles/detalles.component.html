@@ -1,0 +1,11 @@
+<div>
+    <img src="{{videojuego.caratula}}"/>  
+    <div class="detalles">
+        <p>Título: {{videojuego.titulo}}</p>
+        <p>Id: {{videojuego.id}} </p>
+        <p>Compañía: {{videojuego.compania}} </p>
+        <p>Valoración media: {{videojuego.valoracion}}</p>
+    </div>
+</div>
+<br/>
+<button [routerLink]="['/listado']">Volver</button>
