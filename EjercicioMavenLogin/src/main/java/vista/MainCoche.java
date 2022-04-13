@@ -21,7 +21,7 @@ public class MainCoche {
 			System.out.println("Inicio de sesión: Introduzaca el usuario y la contraseña");
 			String nombre = sc.next();
 			String password = sc.next();
-			if(gu.login(nombre, password)) {
+			if(gu.loginPost(nombre, password)) {
 				do {
 					menu();
 					int opcion = sc.nextInt();

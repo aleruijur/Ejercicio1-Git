@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
       vacio = true
     }
     if (!vacio){
-      let obs = this._loginapiService.estaRegistrado(this.username, this.password)
+      let obs = this._loginapiService.estaRegistradoPost(this.username, this.password)
       
       obs.subscribe({
         next:  (respuesta) => {

@@ -13,8 +13,14 @@ export class LoginapiService {
     
   }
 
-  public estaRegistrado(nombre : string, password : string) : Observable<any>{   
+  public estaRegistradoGet(nombre : string, password : string) : Observable<any>{   
     return this._httpClient.get<any>(`${this.endPoint}?nombre=${nombre}&password=${password}`)
+  }
+
+  public estaRegistradoPost(nombre : string, password : string) : Observable<any>{   
+    let headers = new HttpHeaders();
+    headers = headers.set('Content-Type', 'application/x-www-form-urlencoded');
+    return this._httpClient.post<any>(`${this.endPoint}`,`nombre=${nombre}&password=${password}`,{headers: headers})
   }
 
 }
