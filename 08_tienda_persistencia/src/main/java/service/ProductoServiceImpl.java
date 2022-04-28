@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -45,6 +46,14 @@ public class ProductoServiceImpl implements ProductoService{
 	@Override
 	public Producto buscarPorId(int id) {
 		return entityManager.find(Producto.class,id);
+	}
+	
+	@Override
+	public double precioMedioSeccion(String seccion) {
+		String jpql = "select avg(p.precio) from Producto p where p.seccion=:seccion";
+		TypedQuery<Double> query = entityManager.createQuery(jpql, Double.class);
+		query.setParameter("seccion", seccion);
+		return query.getSingleResult();
 	}
 
 }

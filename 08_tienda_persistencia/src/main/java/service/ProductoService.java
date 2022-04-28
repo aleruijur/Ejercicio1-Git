@@ -11,4 +11,5 @@ public interface ProductoService {
 	void insetar(Producto p);
 	void modificar(String nombre, Double precio);
 	void eliminar(String nombre);
+	double precioMedioSeccion(String seccion);
 }
