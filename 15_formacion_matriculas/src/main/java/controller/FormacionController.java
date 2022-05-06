@@ -90,7 +90,7 @@ public class FormacionController {
 		return service.findCursosNoMatriculados(usuario);
 	}
 	
-	@GetMapping(value="Matricular", produces=MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value="Matricular", produces=MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody boolean matricular(@RequestParam("usuario") String usuario, @RequestParam("idCurso") int idCurso) {
 		return service.matricular(usuario, idCurso);
 	}
