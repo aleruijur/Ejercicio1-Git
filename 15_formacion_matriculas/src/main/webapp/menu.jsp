@@ -8,5 +8,6 @@
 <body>
   <app-root></app-root>
 <script src="runtime.5fc3daab7687a891.js" type="module"></script><script src="polyfills.642312494c288a92.js" type="module"></script><script src="main.fd5ab8895201a2a3.js" type="module"></script>
-
+<a href="altaAlumno.jsp">Alta alumno</a><br>
+<a href="altaCurso.jsp">Alta curso</a>
 </body></html>
